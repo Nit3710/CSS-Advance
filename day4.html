@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    body {
+        width: 100%;
+        height: 100vh;
+        background-color: lightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .card {
+        position: relative;
+        width: 300px;
+        height: 200px;
+        border-radius: 10px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+        transition: 0.3s;
+        padding: 10px 50px;
+        background-color: bisque;
+        cursor: pointer;
+    }
+
+    .card:hover {
+        height: 320px;
+    }
+
+    .imgbox {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transform: translateY(-80px);
+        z-index: 99;
+
+    }
+
+    img {
+        border-radius: 8px;
+        width: 100%;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .content {
+        padding: 10px 20px;
+        text-align: center;
+        transform: translateY(-450px);
+        opacity: 0;
+        transition: 0.3s;
+    }
+
+    .card:hover>.content {
+        opacity: 1;
+        transform: translateY(-220px);
+    }
+    .content h1{
+        color:#7f9ead;
+    }
+</style>
+
+<body>
+    <div class="card">
+        <div class="imgbox">
+            <img
+                src="https://images.pexels.com/photos/128402/pexels-photo-128402.jpeg?auto=compress&cs=tinysrgb&w=400" />
+        </div>
+        <div class="content">
+            <h2>Keep smiling</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic distinctio modi illo recusandae, voluptates
+                quaerat. Totam vitae et praesentium sapiente.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
